@@ -10,14 +10,15 @@ const cars = [
 let cheap = cars.filter(el => el.price < 35000);
 
 console.log("Cheap cars:");
-cheap.forEach((car) => {
-  console.log(`${car.brand} ${car.model} цена:${car.price}`);
-});
+cheap.forEach((car) => console.log(`${car.brand} ${car.model} цена:${car.price}`)
+
+);
 
 
-let index = +prompt()
+
 
 let arr = ['Aleksey', 'Kartoshka', 'Margarita', 'Morgenshtern', 'Monica'];
+let index = +prompt("Выберите машину чтобы удалить: " + arr)
 
 if(index >= 0 && index < arr.length){
     let del = arr.splice(index, 1);
