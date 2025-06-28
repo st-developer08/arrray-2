@@ -20,7 +20,7 @@ cheap.forEach((car) => console.log(`${car.brand} ${car.model} цена:${car.pri
 let arr = ['Aleksey', 'Kartoshka', 'Margarita', 'Morgenshtern', 'Monica'];
 let index = +prompt("Выберите машину чтобы удалить: " + arr)
 
-if(index >= 0 && index < arr.length){
+if(index < arr.length){
     let del = arr.splice(index, 1);
     alert(del +' удален')
     alert("Новый список: " + arr)
