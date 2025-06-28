@@ -7,8 +7,12 @@ const cars = [
   { brand: "Hyundai", model: "Sonata", price: 24000 }
 ];
 
-let cheap = cars.filter(el => el.price < 35000)
-console.log("Cheap cars " , cheap);
+let cheap = cars.filter(el => el.price < 35000);
+
+console.log("Cheap cars:");
+cheap.forEach((car) => {
+  console.log(`${car.brand} ${car.model} цена:${car.price}`);
+});
 
 
 let index = +prompt()
@@ -18,6 +22,8 @@ let arr = ['Aleksey', 'Kartoshka', 'Margarita', 'Morgenshtern', 'Monica'];
 if(index >= 0 && index < arr.length){
     let del = arr.splice(index, 1);
     alert(del +' удален')
+    alert("Новый список: " + arr)
+    
 }else{
     alert("Такого элемента нет")
 }
